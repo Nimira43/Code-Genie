@@ -1,4 +1,4 @@
-import { SignedIn, SignedOut, SignOutButton, SignUpButton } from '@clerk/nextjs'
+import { SignedIn, SignedOut, SignOutButton, SignUpButton, UserButton } from '@clerk/nextjs'
 
 export default function page() {
   return (
@@ -11,6 +11,9 @@ export default function page() {
           </button>
         </SignUpButton>
       </SignedOut>
+
+      <UserButton />
+
       <SignedIn>
         <SignOutButton>
           <button className='bg-[#111] text-[#fffaf0] py-2 px-4 rounded-md hover:bg-[#ff4500]'>
