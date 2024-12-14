@@ -12,7 +12,11 @@ export default function page() {
         </SignUpButton>
       </SignedOut>
       <SignedIn>
-        <SignOutButton />
+        <SignOutButton>
+          <button className='bg-[#111] text-[#fffaf0] py-2 px-4 rounded-md hover:bg-[#ff4500]'>
+              Sign Out
+          </button>
+        </SignOutButton>
       </SignedIn>
     </div>
   )
