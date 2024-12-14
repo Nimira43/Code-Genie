@@ -5,7 +5,11 @@ export default function page() {
     <div>
       <h1>Code Genie</h1>
       <SignedOut>
-        <SignUpButton />
+        <SignUpButton>
+          <button className='bg-[#ff4500] text-[#fffaf0] py-2 px-4 rounded-md hover:bg-[#111]'>
+            Sign Up
+          </button>
+        </SignUpButton>
       </SignedOut>
       <SignedIn>
         <SignOutButton />
