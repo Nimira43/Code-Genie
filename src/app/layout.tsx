@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Code Genie',
-  description: 'Next JS project',
+  description: 'Next JS project with Convex DB, Clerk, Tailwind and TypeScript',
 }
 
 export default function RootLayout({
