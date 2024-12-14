@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.logo {
+  display: inline-block;
+  font-family: 'Doto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ff4500;
+  background-color: #111;
+  border: 2px solid #ff4500;
+  border-radius: 8px;
+  padding: 2px 12px;
+}
