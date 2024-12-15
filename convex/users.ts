@@ -8,7 +8,8 @@ export const syncUser = mutation({
     name: v.string(),
   },
   handler: async (ctx, args) => {
-    const existingUser = await ctx.db.query('users')
+    const existingUser = await ctx.db
+    .query('users')
     .filter(q => q.eq(q.field('userId'), args.userId))
     .first()
 
