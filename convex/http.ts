@@ -50,8 +50,11 @@ http.route({
         // await ctx.runMutation(api.users.syncUser)
         // save user to database
       } catch (error) {
-        return new Response('Error creating user', { status: 400})
+        return new Response('Error creating user', { status: 500})
       }
     }
+    return new Response('Webhook processed successfully', {status: 200 })
   })
 })
+
+export default http
