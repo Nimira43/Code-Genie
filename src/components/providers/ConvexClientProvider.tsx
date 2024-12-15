@@ -1,4 +1,4 @@
-'use-client'
+'use client'
 
 import { ConvexReactClient } from "convex/react"
 import { ClerkProvider, useAuth } from "@clerk/nextjs"
