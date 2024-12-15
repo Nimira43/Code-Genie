@@ -20,4 +20,11 @@ export default defineSchema({
     error: v.optional(v.string()),
   }).index('by_user_id', ['userId']),
 
+  snippets: defineTable({
+    userId: v.string(),
+    title: v.string(),
+    language: v.string(),
+    code: v.string(),
+  }).index('by_user_id', ['userId']),
+
 })
