@@ -1,5 +1,5 @@
-import { v } from "convex/values";
-import { mutation } from "./_generated/server";
+import { v } from 'convex/values'
+import { mutation } from './_generated/server'
 
 export const syncUser = mutation({
   args: {
@@ -13,7 +13,6 @@ export const syncUser = mutation({
       .filter(q => q.eq(q.field('userId'), args.userId))
       .first()
     console.log('Existing user:', existingUser);
-
     if (!existingUser) {
       await ctx.db.insert('users', {
         userId: args.userId,
@@ -21,7 +20,7 @@ export const syncUser = mutation({
         name: args.name,
         isPro: false,
       })
-      console.log('User inserted:', { userId: args.userId, email: args.email, name: args.name });
+      console.log('User inserted:', { userId: args.userId, email: args.email, name: args.name })
 
     }
   }
